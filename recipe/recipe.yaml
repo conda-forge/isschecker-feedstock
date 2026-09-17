@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: isschecker
-  version: "0.4.0"
+  version: "0.5.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/ismip/ISM_SimulationChecker/archive/refs/tags/${{ version }}.tar.gz
-  sha256: ce7e000cb0a988b5fdc99ed7ec66bb60dd02a530ec537b0139d4f2599cb61ca4
+  sha256: 63b7d39bcb47a1f4db2c7c52a22587bf14c218efb143ae71aa730ce7bd2a9fba
 
 build:
   number: 0
@@ -33,6 +33,7 @@ requirements:
     - xarray >=2025.1.2,<2027
     - cftime >=1.6.4,<2
     - netcdf4 >=1.7,<2
+    - cf-units >=3.3,<4
     - tqdm >=4.66
 
 tests:
