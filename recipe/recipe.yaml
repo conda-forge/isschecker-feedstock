@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: isschecker
-  version: "0.7.0"
+  version: "0.9.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/ismip/ISM_SimulationChecker/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 7a1e2f59b35a8c4feecbb796af6d8d5078b1bbfa0b672e3ef25c2584b42f210b
+  sha256: b2adf51b07026c0d28c1b5de8ccccd1ab8f048c0da7554938ea354837a775ffc
 
 build:
   number: 0
